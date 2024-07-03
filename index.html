@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YumWorks - Nuestros Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="YumWorks Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <img src="assets/anadir-al-carrito.png" alt="Carrito de compras">
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Nuestros Productos</h2>
+            <div class="categories">
+                <button class="category-button active" data-category="todos">Todos</button>
+                <button class="category-button" data-category="galletas">Galletas</button>
+                <button class="category-button" data-category="pasteles">Pasteles</button>
+                <button class="category-button" data-category="postres">Postres</button>
+                <button class="category-button" data-category="panaderia">Panadería</button>
+            </div>
+            <div class="product-list">
+                <!-- Postres -->
+                <div class="product-card" data-category="postres">
+                    <img src="assets/pastel-fresa-1.png" alt="Arroz con Leche">
+                    <h3>Arroz con Leche</h3>
+                    <div class="stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
+                    </div>
+                    <p>S/ 10.00</p>
+                    <button onclick="location.href='http://127.0.0.1:3000/añadir.html'">Añadir a carrito</button>
+                </div>
+                <div class="product-card" data-category="postres">
+                    <img src="assets/image 6-1.png" alt="Postre de Galleta">
+                    <h3>Postre de Galleta</h3>
+                    <div class="stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
+                    </div>
+                    <p>S/ 6.00</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-category="postres">
+                    <img src="assets/image 6-2.png" alt="Crema Volteada">
+                    <h3>Crema Volteada</h3>
+                    <div class="stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
+                    </div>
+                    <p>S/ 8.00</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+        <section class="recommended-products">
+            <h2>Productos Recomendados</h2>
+            <div class="recommended-list">
+                <div class="recommended-card">
+                    <img src="assets/pastel-fresa.png" alt="Pastel de Lúcuma">
+                    <h3>Pastel de Lúcuma</h3>
+                    <button>Ver más</button>
+                </div>
+                <div class="recommended-card">
+                    <img src="assets/image 6.png" alt="Pastel de Vainilla">
+                    <h3>Pastel de Vainilla</h3>
+                    <button>Ver más</button>
+                </div>
+                <div class="recommended-card">
+                    <img src="assets/image 7.png" alt="Pastel de Chocolate">
+                    <h3>Pastel de Chocolate</h3>
+                    <button>Ver más</button>
+                </div>
+                <div class="recommended-card">
+                    <img src="assets/image 7-3.png" alt="Cupcake de Vainilla">
+                    <h3>Cupcake de Vainilla</h3>
+                    <button>Ver más</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pastelería YumWorks. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Términos de servicio</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
